@@ -322,7 +322,7 @@ function App() {
           <button className="bullets__menu__item-button">Ultrasons</button>
         </div>
         <div className="bullets__menu-item bullets__menu__item__picture-viewer">
-          <img src={'/product.svg'} alt={'product'} />
+          <img src={'/product.svg'} alt={'product'} loading="lazy" />
         </div>
         <div className="bullets__menu-item">
           <div className="welcome-cta__section__title">
@@ -381,33 +381,33 @@ function App() {
       <div className="galerie">
           <div className="galerie-item galerie-main">
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/Rectangle 887.png' />
+              <img className='galerie-image' src='/Rectangle 887.png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (4).png' />
+              <img className='galerie-image' src='/images (4).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (5).png' />
+              <img className='galerie-image' src='/images (5).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (6).png' />
+              <img className='galerie-image' src='/images (6).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/Rectangle 890.png' />
+              <img className='galerie-image' src='/Rectangle 890.png' loading="lazy" />
             </div>
           </div>
           <div className="galerie-item galerie-second">
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (9).png' />
+              <img className='galerie-image' src='/images (9).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (1).png' />
+              <img className='galerie-image' src='/images (1).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (2).png' />
+              <img className='galerie-image' src='/images (2).png' loading="lazy" />
             </div>
             <div className="galerie__image-item">
-              <img className='galerie-image' src='/images (3).png' />
+              <img className='galerie-image' src='/images (3).png' loading="lazy" />
             </div>
           </div>
         </div>
@@ -420,11 +420,11 @@ function App() {
       </div>
       <div className="ready-panel">
         <div className="ready__panel-background">
-          <img src={'/RRT 1.svg'} />
+          <img src={'/RRT-1.webp'} loading="lazy"/>
         </div>
         <div className="ready__panel-description">
           <div className="ready__panel__description-logo">
-            <img src="med.svg" />
+            <img src="med.svg" loading="lazy" />
           </div>
           <div className="ready__panel__description-main">
             <h1>Book Appointements</h1>

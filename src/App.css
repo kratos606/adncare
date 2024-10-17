@@ -954,7 +954,8 @@
 }
 
 .ready__panel-background img{
-  transform: translate(70px);
+  width: 100%;
+  transform: translateX(170px) translateY(65px);
 }
 
 .ready__panel-description{
