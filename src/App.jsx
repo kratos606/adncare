@@ -1,21 +1,24 @@
-// App.js
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './pages/home';
-import Apropos from './pages/apropos';
-import Contact from './pages/contact';
-import Galerie from './pages/galerie';
+
+// Lazy load the pages
+const Home = lazy(() => import('./pages/home'));
+const Apropos = lazy(() => import('./pages/apropos'));
+const Contact = lazy(() => import('./pages/contact'));
+const Galerie = lazy(() => import('./pages/galerie'));
 
 function App() {
   return (
     <Router>
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+      </Suspense>
     </Router>
   );
 }
