@@ -1,8 +1,22 @@
 import React from 'react';
 import { IoArrowForward } from 'react-icons/io5'; // Import the arrow icon from react-icons
 import { FaArrowUpLong } from "react-icons/fa6";
+import './ReadySection.css'
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const ReadySection = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (location.pathname === '/') {
+      // If the current URL is '/', scroll to the bottom of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Otherwise, navigate to '/'
+      navigate('/');
+    }
+  };
   return (
     <section className="ready">
       <div className="ready-container">
@@ -27,7 +41,7 @@ const ReadySection = () => {
           </div>
         </div>
       </div>
-      <div className="back__cta">
+      <div className="back__cta" onClick={() => handleClick()}>
         <FaArrowUpLong style={{fontSize:'2rem'}} />
       </div>
     </section>

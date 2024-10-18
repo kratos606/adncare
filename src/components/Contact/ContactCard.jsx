@@ -1,6 +1,7 @@
 import React from 'react';
 import { PiPhoneCallFill } from "react-icons/pi";
 import { FaRegEnvelope, FaPhone } from "react-icons/fa";
+import './ContactCard.css'
 
 const ContactCard = () => {
   return (

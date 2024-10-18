@@ -1,0 +1,161 @@
+.bullets {
+    width: 100%;
+    height: 336px;
+  
+    /* Set the background color */
+    background-color: #2F80ED;
+  
+    /* Add the background image */
+    background-image: url('/bullets-background.svg');
+  
+    /* Allow the background image to repeat */
+    background-repeat: repeat;
+  
+    /* Position the background image at the center */
+    background-position: center center;
+  
+    /* Scale the background image to maintain aspect ratio and take full height */
+    background-size: auto 100%;
+  
+    /* Optional: Adjust blending mode if needed */
+    background-blend-mode: normal; /* You can experiment with modes like multiply, overlay, etc. */
+  
+    /* Ensure that any overflow due to background image is visible */
+    overflow: visible;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    gap: 2rem;
+  
+    align-items: center;
+  }
+  
+  .bullets__item{
+    width: 318px;
+    height: 345px;
+    background: #ffffff;
+    border-radius: 20px;
+    transform: translateY(100px);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .bullets__item-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e5f1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bullets__item-number span {
+    font-size: 33px;
+    font-family: Anta;
+    color: #2F80ED;
+  }
+  
+  .bullets__item-title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Space Grotesk;
+    color: #2F80ED;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  
+  .bullets__item-arrow {
+    color: #FFA800;
+    margin: 10px 0;
+  }
+  
+  .bullets__item-description {
+    font-family: Inter;
+    font-size: 15px;
+    color: #737373;
+    line-height: 24px;
+  }
+  
+  .bullets__item-arrow svg {
+    color: #FFA800;  /* Color of the arrow */
+  }
+  
+  .bullets__item__read-more{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50%) translateY(25px);
+    border-radius: 100%;
+    border: 1px solid #2F80ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bullets__menu__item__picture-viewer{
+    height: 334px;
+    border-radius: 14px;
+    position: relative;
+    border: none;
+    z-index: 1;
+  }
+  
+  .bullets__menu-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 2rem;
+  }
+  
+  .bullets__menu-item{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 242px;
+    gap:20px;
+  }
+  
+  .bullets__menu-item:last-child{
+    height: 334px;
+    width: 364.44px;
+  }
+  
+  .bullets__menu__item-button{
+    width: 100%;
+    height: 70px;
+    border-radius: 14px;
+    position: relative;
+    border: none;
+    z-index: 1;
+  }
+  
+  /* ::before pseudo-element for the gradient border */
+  .bullets__menu__item-button::before, .bullets__menu__item__picture-viewer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2px; /* Border thickness */
+    background: linear-gradient(180deg, #2F80ED, #FFA800); /* Gradient colors and direction */
+    border-radius: 14px; /* Must match the parent for consistent rounding */
+    
+    /* Masking to create transparent center */
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    background-clip: padding-box;
+    
+    z-index: -1; /* Places the pseudo-element behind the .counter-card content */
+  }

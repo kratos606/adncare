@@ -1,0 +1,72 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+  
+.navbar__logo img {
+    /* Example style */
+    height: 50px;
+}
+  
+.navbar__menu-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.navbar__menu {
+    width: 449px;
+    height: 50px;
+    background-color: #EEEEEE;
+    border-radius: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+  
+.navbar__menu-item {
+    flex: 1;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+  
+.navbar__menu-item--active {
+    color: black;
+}
+  
+.navbar__contact-button {
+    color: white; /* Text color */
+    background-color: #FFA800; /* Button background color */
+    border: none;
+    width: 137px;
+    height: 50px;
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+  
+.navbar__contact-icon {
+    margin-inline-start: 0.5rem;
+}
+
+.navbar__menu-link{
+    all:unset;
+    cursor: pointer;
+  }
+
+  .contact-button-link{
+    all:unset;
+  }

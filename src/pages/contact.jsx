@@ -9,7 +9,7 @@ const Contact = () => {
     <>
         <section className='Contact__hero-section'>
         <Navbar colored={true} />
-        <SwipeDown />
+        <SwipeDown gold={true}/>
         </section>
         <ReadySection />
         <Footer />

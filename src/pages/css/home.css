@@ -1,0 +1,145 @@
+.cta-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .cta-section__subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  .cta-section__main-title {
+    font-family: 'Anta', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .cta-section__button {
+    position: relative;
+    width: 323.56px;
+    height: 49.78px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    border-radius: 17.7778px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-block: 2rem;
+    overflow: hidden;
+  }
+  
+  .cta-section__button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1px; /* Border thickness */
+    background: linear-gradient(120deg, white, transparent);
+    border-radius: 17.7778px;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    background-clip: padding-box;
+    z-index: -1;
+  }
+  
+  .cta-section__button span {
+    position: relative;
+    padding: 0 10px; /* Space between the text and the lines */
+    font-family: 'Anta', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .cta-section__button span::before,
+  .cta-section__button span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35px; /* Adjust the width of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: white; /* Line color */
+  }
+  
+  .cta-section__button span::before {
+    left: -45px; /* Position the line to the left */
+  }
+  
+  .cta-section__button span::after {
+    right: -45px; /* Position the line to the right */
+  }
+
+  .galerie__image-item{
+    width: calc(100% / 4);
+    aspect-ratio: 9 / 7;
+    border-radius: 13px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .galerie-item{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+  }
+  
+  .galerie-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .benefit {
+    display: grid;
+    grid-template-columns: 32px auto; /* First column for icon, second for text */
+    align-items: center;
+    gap: 1rem;
+    width: 155px;
+    color: white;
+  }
+  
+  .benefit__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F3584;
+    border-radius: 100%;
+  }
+
+  .main-back{
+    flex:3;
+    position: relative;
+  }
+  
+  .main-back::before{
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 25%;
+    background: url(/welcome-background-svg.webp);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 80%;
+    aspect-ratio: 16 / 9;
+  }

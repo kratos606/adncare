@@ -1,4 +1,5 @@
 import React from 'react';
+import './CounterCard.css'
 
 const CounterCard = () => {
   const data = [

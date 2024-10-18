@@ -1,0 +1,97 @@
+.counter-card {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px; /* Space for the content inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 345px;
+    font-family: Arial, sans-serif;
+    z-index: 1; /* Ensure the card is above the ::before element */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.8;
+  }
+  
+  /* ::before pseudo-element for the gradient border */
+  .counter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2px; /* Border thickness */
+    background: linear-gradient(180deg, #2F80ED, #FFA800); /* Gradient colors and direction */
+    border-radius: 12px; /* Must match the parent for consistent rounding */
+    
+    /* Masking to create transparent center */
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    background-clip: padding-box;
+    
+    z-index: -1; /* Places the pseudo-element behind the .counter-card content */
+  }
+  
+  /* ::after pseudo-element for the triangle.svg */
+  .counter-card::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: -130px; /* Position to the left outside the card */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    width: 195.44px; /* Width of the triangle */
+    height: 195.44px; /* Height of the triangle */
+    background: url('/triangle.svg') no-repeat center center;
+    background-size: contain; /* Ensure the SVG scales appropriately */
+    
+    /* Masking to show only the overflowing part of the triangle */
+    -webkit-mask: 
+      linear-gradient(to left, transparent 32%, black 32%); /* Adjust the percentage as needed */
+    mask: 
+      linear-gradient(to left, transparent 32%, black 32%);
+    
+    pointer-events: none; /* Allows clicks to pass through if necessary */
+    z-index: -2; /* Ensure it's behind the gradient border */
+  }
+  
+  .counter-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex:1;
+  }
+  
+  .counter-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .counter-icon {
+    color: orange;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  .counter-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .counter-number {
+    font-size: 36px;
+    color: #333;
+    font-family: Space Grotesk;
+    font-weight: 500;
+  }
+  
+  .counter-label {
+    font-size: 16px;
+    color: #888;
+    font-family: Space Grotesk;
+    font-weight: 500;
+  }

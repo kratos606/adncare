@@ -1,5 +1,6 @@
 import React from 'react';
 import CounterCard from '../CounterCard/CounterCard';
+import './WelcomeSection.css'
 
 const WelcomeSection = () => {
   return (
@@ -14,8 +15,10 @@ const WelcomeSection = () => {
         </div>
       </div>
       <div className="welcome-main__section">
-        <div className="welcome-cta__background">
-          <CounterCard />
+        <div className="main-back">
+          <div className="welcome-cta__background">
+            <CounterCard />
+          </div>
         </div>
         <div className="welcome-cta__section">
           <div className="welcome-cta__section__title">
@@ -33,7 +36,7 @@ const WelcomeSection = () => {
                 Satisfaction Guarantee
               </li>
             </ul>
-            <button className="welcome-cta__section__call__now">
+            <button className="welcome-cta__section__call__now" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
               Contact Us
             </button>
           </div>

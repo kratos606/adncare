@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewSection.css'
 
 const NewSection = () => {
   return (
@@ -21,7 +22,7 @@ const NewSection = () => {
             <span className="welcome-cta__section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis, augue uttytu i imperdiet ultricies, leo mauris rhoncus uttytu i imperdiet ultricies, leo mauris rhoncus.
             </span>
-            <button className="welcome-cta__section__call__now">
+            <button className="welcome-cta__section__call__now" onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>
               Contact Us
             </button>
           </div>

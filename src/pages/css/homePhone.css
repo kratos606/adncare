@@ -1,0 +1,225 @@
+.background__home-phone{
+    background-color: #5662F9;
+    background-image: url('/background-phone.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center calc(100% - 20%);
+    width: 100%;
+    height: 100vh;
+    position: relative; /* Ensure the position context for absolute children */
+    overflow: hidden;   /* Prevent overflow from pseudo-elements */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .background__home-phone::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 15px;
+    transform: skew(45deg) translateX(-15px);
+    background-color: white;
+  }
+  
+  .background__home-phone::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 15px;
+    transform: skew(-45deg) translateX(15px);
+    background-color: white;
+  }
+  
+  .cta-section__phone {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  
+  .cta-section__subtitle__phone {
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20.89px;
+    text-align: center;
+    color: white;
+    width: 300px;
+  }
+  
+  .cta-section__main-title__phone {
+    font-family: Anta;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 25.49px;
+    text-align: center;
+    color: white;
+  }
+  
+  .cta-section__button__phone {
+    position: relative;
+    width: 323.56px;
+    height: 49.78px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    border-radius: 17.7778px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .cta-section__button__phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1px; /* Border thickness */
+    background: linear-gradient(120deg, white, transparent);
+    border-radius: 17.7778px;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    background-clip: padding-box;
+    z-index: -1;
+  }
+  
+  .cta-section__button__phone span {
+    position: relative;
+    padding: 0 10px; /* Space between the text and the lines */
+    font-family: 'Anta', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .cta-section__button__phone span::before,
+  .cta-section__button__phone span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35px; /* Adjust the width of the line */
+    height: 2px; /* Thickness of the line */
+    background-color: white; /* Line color */
+  }
+  
+  .cta-section__button__phone span::before {
+    left: -45px; /* Position the line to the left */
+  }
+  
+  .cta-section__button__phone span::after {
+    right: -45px; /* Position the line to the right */
+  }
+  
+  .swipe-phone{
+    margin-block: -2rem;
+  }
+  
+  .welcome__title__phone{
+    font-family: Anta;
+    font-size: 21.76px;
+    font-weight: 400;
+    line-height: 26.57px;
+    text-align: center;
+    color: #2F80ED;
+    position: relative;
+  }
+  
+  .welcome__title__phone::before,
+  .welcome__title__phone::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #FFA800;
+    top: 50%;
+  }
+  
+  .welcome__title__phone::before{
+    left: -45px;
+  }
+  
+  .welcome__title__phone::after{
+    right: -45px;
+  }
+  
+  .welcome__header__phone,.welcome__footer__phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 685px;
+    text-align: center;
+  }
+  
+  .welcome__details__phone{
+    font-family: Space Grotesk;
+    font-size: 14.77px;
+    font-weight: 400;
+    line-height: 18.84px;
+    text-align: center;
+    width: 323px;
+  }
+  
+  .title__container__phone{
+    width: 100%;
+    background: url(/title-background.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome__phone .welcome-cta__background{
+    width: 100%;
+    margin-block: 4rem;
+  }
+
+  .navbar-menu__phone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  .navbar__menu-item__phone{
+    font-family: Anta;
+    font-size: 37.62px;
+    font-weight: 400;
+    line-height: 66.59px;
+    opacity: 0.5;
+    color: white;
+  }
+  
+  .navbar__menu-item__phone.active{
+    opacity: 1;
+  }
+
+  .main-back__phone{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-image: url('/skills.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-block: 4rem;
+  }

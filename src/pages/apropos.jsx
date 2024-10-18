@@ -4,6 +4,8 @@ import ReadySection from '../components/ReadySection/ReadySection'
 import Footer from '../components/Footer/Footer'
 import SwipeDown from '../components/SwipeDown/SwipeDown'
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaPlay } from "react-icons/fa";
+import './css/apropos.css'
 
 const Features = () => {
   const features = [
@@ -33,7 +35,7 @@ const Apropos = () => {
     <>
         <section className='apropos__hero-section'>
         <Navbar colored={true} />
-        <SwipeDown />
+        <SwipeDown gold={true} />
         <div className="title__container">
             <div className="welcome__footer">
             <h1 className="welcome__title">à propos de nous</h1>
@@ -45,7 +47,11 @@ const Apropos = () => {
               <li className="check__list-item"><IoMdCheckmarkCircleOutline className='check__list-item__icon' />100% satisfaction</li>
               <li className="check__list-item"><IoMdCheckmarkCircleOutline className='check__list-item__icon' />Epert team meamber</li>
               <li className="check__list-item"><IoMdCheckmarkCircleOutline className='check__list-item__icon' />modern technology</li>
-              <li className="video__player-grid"></li>
+              <li className="video__player-grid">
+                <img className='video__player-grid-image' src="/Rectangle 887.png" loading='lazy' />
+                <div className="video__player-grid-overlay"></div>
+                <div className="apropos-play__button"><FaPlay className='apropos-play__button-icon' /></div>
+              </li>
             </ul>
           </div>
           <div className="grid-item">
@@ -75,7 +81,7 @@ const Apropos = () => {
           </div>
           <Features />
           <div className="why__us-menu">
-            <img src="/5e7996ff75142dfda98484a79ff366b8.jpg" />
+            <img src="/5e7996ff75142dfda98484a79ff366b8.webp" />
             <div>
               <div className="why__us__section">
                 <div className="why__us__section__title">

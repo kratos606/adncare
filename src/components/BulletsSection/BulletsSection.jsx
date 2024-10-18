@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoArrowForward, IoChevronForward } from 'react-icons/io5';
+import './BulletsSection.css'
 
 const bulletsData = [
   {

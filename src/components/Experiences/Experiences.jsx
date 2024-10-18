@@ -1,6 +1,7 @@
 import React from 'react';
 import { PiPlayBold } from "react-icons/pi";
 import { IoPauseOutline } from "react-icons/io5";
+import './Experiences.css'
 
 const Experiences = () => {
   return (
@@ -71,7 +72,7 @@ const Experiences = () => {
             <img className='galerie-image' src='/images (1).png' alt="Gallery 7" loading="lazy" />
           </div>
           <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (2).png' alt="Gallery 8" loading="lazy" />
+            <img className='galerie-image' src='/images (2).webp' alt="Gallery 8" loading="lazy" />
           </div>
           <div className="galerie__image-item">
             <img className='galerie-image' src='/images (3).png' alt="Gallery 9" loading="lazy" />

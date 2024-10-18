@@ -6,9 +6,12 @@ import NewSection from '../components/NewSection/NewSection';
 import Experiences from '../components/Experiences/Experiences';
 import ReadySection from '../components/ReadySection/ReadySection';
 import Footer from '../components/Footer/Footer';
+import './css/home.css'
+
 
 function Home() {
-  return (
+
+  return (    
     <>
       <HeroSection />
       <WelcomeSection />
@@ -17,7 +20,7 @@ function Home() {
       <Experiences />
       <ReadySection />
       <Footer />
-    </>
+    </>  
   );
 }
 

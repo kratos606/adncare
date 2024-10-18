@@ -1,0 +1,86 @@
+.swipe-down {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.swipe-down__gesture {
+    position: relative;
+    width: 50px; /* You can adjust this */
+    height: 100px; /* Adjust based on your design */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden; /* Hide overflow so the icon moves within the container */
+}
+  
+.swipe-down__icon {
+    width: 27px;
+    height: 54px;
+    border-radius: 27px;
+    background-color: white;
+    
+    /* Animation with Total Duration (1.5s animation + 2s invisible) */
+    animation: swipeDown 2s linear infinite;
+}
+  
+@keyframes swipeDown {
+    /* Start of Animation */
+    0% {
+      transform: translateY(0);
+      opacity: 0.7;
+      width: 27px;
+      height: 27px;
+    }
+  
+    /* Swipe Down Motion */
+    42.86% { /* At 1.5s */
+      transform: translateY(40px);
+      width: 27px;
+      height: 54px;
+      opacity: 0.7;
+    }
+  
+    /* Optional: Further Animation Steps */
+    75% { /* At 2.625s */
+      transform: translateY(70px);
+      width: 27px;
+      height: 27px;
+      opacity: 0.7;
+    }
+  
+    /* Begin Invisible Period */
+    85.71% { /* At 3s */
+      transform: translateY(70px);
+      width: 27px;
+      height: 27px;
+      opacity: 0;
+    }
+  
+    /* Maintain Invisible State */
+    100% { /* At 3.5s */
+      transform: translateY(70px);
+      width: 27px;
+      height: 27px;
+      opacity: 0;
+    }
+}
+  
+.swipe-down__title {
+    font-size: 12px;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 2px;
+}
+  
+.swipe-down-gold .swipe-down__icon{
+    background-color: #FEAC00;
+}
+  
+.swipe-down-gold .swipe-down__title{
+    color: #FEAC00;
+}

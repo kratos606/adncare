@@ -8,6 +8,8 @@ import { MdOutlineVerified, MdOutlineAccessTime } from 'react-icons/md';
 import { LuCalendarCheck } from 'react-icons/lu';
 import { PiPhoneCallFill } from "react-icons/pi";
 import Navbar from '../Navbar/Navbar'
+import SwipeDown from '../SwipeDown/SwipeDown';
+import './HeroSection.css'
 
 const ContactCard = () => {
   return (
@@ -48,12 +50,7 @@ const HeroSection = () => {
     <section className='hero-section'>
       <Navbar colored={false} />
       <div className='hero__main'>
-        <div className="swipe-down">
-          <div className="swipe-down__gesture">
-            <div className="swipe-down__icon"></div>
-          </div>
-          <p className="swipe-down__title">SWIPE DOWN</p>
-        </div>
+        <SwipeDown />
         <div className="cta-section">
           <h2 className="cta-section__subtitle">
             Ostéopathie, Périnéologie & Physiokinésithérapie du Sport
@@ -70,14 +67,14 @@ const HeroSection = () => {
           </div> 
         </div>
         <div className="hero__footer-section">
-          <button className="hero__footer-section__call-now">
+          <a style={{textDecoration:'none'}} className="hero__footer-section__call-now" href='tel:+212667783603'>
             <span>
               Call Us Now
             </span>
             <div className="hero__footer-section__call-icon">
               <FaPhone style={{ color:'white', transform: 'scaleX(-1)' }} />
             </div>
-          </button>
+          </a>
           <ul className="hero__footer-section__benefits">
             <li className="benefit">
               <div className="benefit__icon"><MdOutlineVerified style={{ fontSize: '1rem' }} /></div>
@@ -98,10 +95,10 @@ const HeroSection = () => {
           </ul>
 
           <ul className="hero__footer-section__social-media">
-            <li className="social-media__item"><FaFacebookF /></li>
-            <li className="social-media__item"><FaInstagram /></li>
-            <li className="social-media__item"><FaRegEnvelope /></li>
-            <li className="social-media__item"><IoLocationOutline /></li>
+            <a style={{all:'unset'}} href='https://www.facebook.com/adn.care/' target='_blank'><li className="social-media__item"><FaFacebookF /></li></a>
+            <a style={{all:'unset'}} href='https://www.instagram.com/adn_care/' target='_blank'><li className="social-media__item"><FaInstagram /></li></a>
+            <a style={{all:'unset'}} href='mailto:contact@adncare.com' target='_blank'><li className="social-media__item"><FaRegEnvelope /></li></a>
+            <a style={{all:'unset'}} href='https://www.google.com/maps/place/ADN+Care+:+Ost%C3%A9opathie,+P%C3%A9rin%C3%A9ologie+%26+Physiokin%C3%A9sith%C3%A9rapie+du+Sport+Pt.+Adnane+Adda/@34.6552916,-1.9187889,17z/data=!3m1!4b1!4m6!3m5!1s0xd787b10b9c54597:0x54cdb1e5c7920200!8m2!3d34.6552872!4d-1.916214!16s%2Fg%2F11fjtv_pdw?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D' target='_blank'><li className="social-media__item"><IoLocationOutline /></li></a>
           </ul>
         </div>
       </div>
