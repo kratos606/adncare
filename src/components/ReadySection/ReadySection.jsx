@@ -1,6 +1,6 @@
 import React from 'react';
-import { IoArrowForward } from 'react-icons/io5'; // Import the arrow icon from react-icons
-import { FaArrowUpLong } from "react-icons/fa6";
+import { IoArrowForward } from '@react-icons/all-files/io5/IoArrowForward'; // Import the arrow icon from react-icons
+import { FaArrowUp } from "@react-icons/all-files/fa/FaArrowUp";
 import './ReadySection.css'
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -42,7 +42,7 @@ const ReadySection = () => {
         </div>
       </div>
       <div className="back__cta" onClick={() => handleClick()}>
-        <FaArrowUpLong style={{fontSize:'2rem'}} />
+        <FaArrowUp style={{fontSize:'2rem'}} />
       </div>
     </section>
   );

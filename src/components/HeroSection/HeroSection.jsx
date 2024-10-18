@@ -1,12 +1,14 @@
 import React from 'react';
-import { FaPhone } from 'react-icons/fa'; // Importing the phone icon
-import { FaFacebookF } from "react-icons/fa6";
-import { FaRegEnvelope } from "react-icons/fa";
-import { FaInstagram } from 'react-icons/fa';
-import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineVerified, MdOutlineAccessTime } from 'react-icons/md';
-import { LuCalendarCheck } from 'react-icons/lu';
-import { PiPhoneCallFill } from "react-icons/pi";
+import { FaPhone } from '@react-icons/all-files/fa/FaPhone';
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
+import { FaRegEnvelope } from '@react-icons/all-files/fa/FaRegEnvelope';
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { IoLocationOutline } from "@react-icons/all-files/io5/IoLocationOutline";
+import { GoVerified } from '@react-icons/all-files/go/GoVerified';
+import { MdAccessTime } from '@react-icons/all-files/md/MdAccessTime';
+import { RiCalendarCheckLine } from '@react-icons/all-files/ri/RiCalendarCheckLine';
+import { BiPhoneCall } from "@react-icons/all-files/bi/BiPhoneCall";
+
 import Navbar from '../Navbar/Navbar'
 import SwipeDown from '../SwipeDown/SwipeDown';
 import './HeroSection.css'
@@ -15,7 +17,7 @@ const ContactCard = () => {
   return (
     <div className="container">
       <div className="item">
-        <div className='contact__icon-container'><PiPhoneCallFill size={30} color="#FFFFFF" /></div>
+        <div className='contact__icon-container'><BiPhoneCall size={30} color="#FFFFFF" /></div>
         <div>
           <h4 className="textTitle">Appeler à tout moment</h4>
           <p className="textContent">06 67 78 36 03</p>
@@ -77,11 +79,11 @@ const HeroSection = () => {
           </a>
           <ul className="hero__footer-section__benefits">
             <li className="benefit">
-              <div className="benefit__icon"><MdOutlineVerified style={{ fontSize: '1rem' }} /></div>
+              <div className="benefit__icon"><GoVerified style={{ fontSize: '1rem' }} /></div>
               <span className="benefit__title">Satisfaction Guarantee</span>
             </li>
             <li className="benefit">
-              <div className="benefit__icon"><MdOutlineAccessTime style={{ fontSize: '1rem' }} /></div>
+              <div className="benefit__icon"><MdAccessTime style={{ fontSize: '1rem' }} /></div>
               <span className="benefit__title">24H/06 Availability</span>
             </li>
             <li className="benefit">
@@ -89,7 +91,7 @@ const HeroSection = () => {
               <span className="benefit__title">Local US Professional</span>
             </li>
             <li className="benefit">
-              <div className="benefit__icon"><LuCalendarCheck style={{ fontSize: '1rem' }} /></div>
+              <div className="benefit__icon"><RiCalendarCheckLine style={{ fontSize: '1rem' }} /></div>
               <span className="benefit__title">Flexible Appointments</span>
             </li>
           </ul>

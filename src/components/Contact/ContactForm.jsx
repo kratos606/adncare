@@ -8,6 +8,7 @@ const ContactForm = () => {
     email: '',
     message: ''
   });
+  const [result, setResult] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -16,17 +17,33 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here (e.g., send data to server)
-    console.log('Form data submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      message: ''
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "dccd1cb8-9a98-429d-bbc9-8fff6b1da741");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
     });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+      })
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
 
   return (
@@ -71,6 +88,8 @@ const ContactForm = () => {
         required
       />
       <button type="submit" className='send-button'>Envoyer</button>
+      <input type="hidden" name="from_name" value="Adn Care" />
+      <input type="hidden" name="subject" value="New Message from AdnCare Contact" />
     </form>
   );
 };

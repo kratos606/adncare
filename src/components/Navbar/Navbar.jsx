@@ -1,7 +1,7 @@
 // Navbar.js
 import React from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink instead of Link
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowRight } from '@react-icons/all-files/ai/AiOutlineArrowRight';
 import './Navbar.css'
 
 const Navbar = (props) => {

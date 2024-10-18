@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { IoMenu, IoClose } from "react-icons/io5";
-import { FaPhone } from 'react-icons/fa'; // Importing the phone icon
-import { FaFacebookF } from "react-icons/fa6";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaRegEnvelope } from "react-icons/fa";
-import { FaInstagram } from 'react-icons/fa';
+import { FaPhone } from '@react-icons/all-files/fa/FaPhone';
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
+import { FaRegEnvelope } from '@react-icons/all-files/fa/FaRegEnvelope';
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { IoLocationOutline } from "@react-icons/all-files/io5/IoLocationOutline";
+import { IoMenu } from '@react-icons/all-files/io5/IoMenu';
+import { IoClose } from '@react-icons/all-files/io5/IoClose';
 import './css/homePhone.css'
 
 const HomePhone = () => {

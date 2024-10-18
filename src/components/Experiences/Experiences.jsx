@@ -1,6 +1,6 @@
 import React from 'react';
-import { PiPlayBold } from "react-icons/pi";
-import { IoPauseOutline } from "react-icons/io5";
+import { IoPlayOutline } from "@react-icons/all-files/io5/IoPlayOutline"
+import { IoPauseOutline } from "@react-icons/all-files/io5/IoPauseOutline"
 import './Experiences.css'
 
 const Experiences = () => {
@@ -23,7 +23,7 @@ const Experiences = () => {
               <div className="video__item-title">Lorem ipsum</div>
               <div className="video__item-description">Lorem ipsum dolor</div>
             </div>
-            <button className="play-button"><PiPlayBold style={{color:'white',fontSize:'1.5rem'}} /></button>
+            <button className="play-button"><IoPlayOutline style={{color:'white',fontSize:'1.5rem'}} /></button>
           </div>
         </div>
         <div className="video-item" style={{ '--i': `url('/Rectangle 882.png')` }}>
@@ -41,7 +41,7 @@ const Experiences = () => {
               <div className="video__item-title">Lorem ipsum</div>
               <div className="video__item-description">Lorem ipsum dolor</div>
             </div>
-            <button className="play-button"><PiPlayBold style={{color:'white',fontSize:'1.5rem'}} /></button>
+            <button className="play-button"><IoPlayOutline style={{color:'white',fontSize:'1.5rem'}} /></button>
           </div>
         </div>
       </div>

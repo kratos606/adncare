@@ -1,6 +1,8 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaRegEnvelope } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF';
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
+import { FaRegEnvelope } from '@react-icons/all-files/fa/FaRegEnvelope';
+import { IoLocationOutline } from "@react-icons/all-files/io5/IoLocationOutline";
 import ContactForm from '../Contact/ContactForm';
 import ContactCard from '../Contact/ContactCard';
 import './Footer.css'

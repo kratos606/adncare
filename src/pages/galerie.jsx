@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar/Navbar'
 import ReadySection from '../components/ReadySection/ReadySection'
 import Footer from '../components/Footer/Footer'
 import SwipeDown from '../components/SwipeDown/SwipeDown'
-import { PiPlayBold } from "react-icons/pi";
-import { IoPauseOutline } from "react-icons/io5";
+import { IoPlayOutline } from "@react-icons/all-files/io5/IoPlayOutline"
+import { IoPauseOutline } from "@react-icons/all-files/io5/IoPauseOutline"
 import './css/galerie.css'
 
 const GridGallery = () => {
@@ -29,7 +29,7 @@ const VideoGallery = () => {
                     <div className="video__item-title">Lorem ipsum</div>
                     <div className="video__item-description">Lorem ipsum dolor</div>
                     </div>
-                    <button className="play-button"><PiPlayBold style={{color:'white',fontSize:'1.5rem'}} /></button>
+                    <button className="play-button"><IoPlayOutline style={{color:'white',fontSize:'1.5rem'}} /></button>
                 </div>
                 </div>
                 <div className="video-item galerie__video-item" style={{ '--i': `url('/8671a1abb8d0e729edaeef2a1075f9b4.webp')` }}>
@@ -47,7 +47,7 @@ const VideoGallery = () => {
                     <div className="video__item-title">Lorem ipsum</div>
                     <div className="video__item-description">Lorem ipsum dolor</div>
                     </div>
-                    <button className="play-button"><PiPlayBold style={{color:'white',fontSize:'1.5rem'}} /></button>
+                    <button className="play-button"><IoPlayOutline style={{color:'white',fontSize:'1.5rem'}} /></button>
                 </div>
                 </div>
                 <div className="video-item galerie__video-item" style={{ '--i': `url('/Rectangle 882.png')` }}>
@@ -56,7 +56,7 @@ const VideoGallery = () => {
                     <div className="video__item-title">Lorem ipsum</div>
                     <div className="video__item-description">Lorem ipsum dolor</div>
                     </div>
-                    <button className="play-button"><PiPlayBold style={{color:'white',fontSize:'1.5rem'}} /></button>
+                    <button className="play-button"><IoPlayOutline style={{color:'white',fontSize:'1.5rem'}} /></button>
                 </div>
                 </div>
         </div>

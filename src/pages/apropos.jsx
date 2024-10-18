@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar/Navbar'
 import ReadySection from '../components/ReadySection/ReadySection'
 import Footer from '../components/Footer/Footer'
 import SwipeDown from '../components/SwipeDown/SwipeDown'
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { FaPlay } from "react-icons/fa";
+import { IoMdCheckmarkCircleOutline } from "@react-icons/all-files/io/IoMdCheckmarkCircleOutline";
+import { FaPlay } from "@react-icons/all-files/fa/FaPlay";
 import './css/apropos.css'
 
 const Features = () => {
