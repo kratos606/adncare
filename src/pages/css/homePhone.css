@@ -1,9 +1,9 @@
 .background__home-phone{
     background-color: #5662F9;
-    background-image: url('/background-phone.svg');
+    /* background-image: url('/background-phone.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center calc(100% - 20%);
+    background-position: center calc(100% - 20%); */
     width: 100%;
     height: 100vh;
     position: relative; /* Ensure the position context for absolute children */
