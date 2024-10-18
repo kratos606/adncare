@@ -72,6 +72,7 @@ const HomePhone = () => {
             </div>
           </div>
           <div className="main-back__phone">
+            <img src="skills.webp" className='main-back__phone__image' loading='lazy' />
           </div>
           <div className="welcome-cta__section">
             <div className="welcome-cta__section__title welcome-cta__phone">
