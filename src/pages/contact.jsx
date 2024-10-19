@@ -11,8 +11,8 @@ const Contact = () => {
         <Navbar colored={true} />
         <SwipeDown gold={true}/>
         </section>
-        <ReadySection />
-        <Footer />
+        <Footer isFooter={false} />
+        <ReadySection isFooter={true} />
     </>
   )
 }

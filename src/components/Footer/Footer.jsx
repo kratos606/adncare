@@ -7,7 +7,7 @@ import ContactForm from '../Contact/ContactForm';
 import ContactCard from '../Contact/ContactCard';
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({isFooter = true}) => {
   return (
     <section className="footer-section">
       <h1 className='footer__section-title'>
@@ -19,9 +19,13 @@ const Footer = () => {
         </h1>
         <ContactCard />
       </div>
-      <p className="copyright">
-        © SOFTCACTUS, Tous les droits sont réservés, 2024
-      </p>
+      {
+          isFooter ? (
+            <p className="copyright">
+              © SOFTCACTUS, Tous les droits sont réservés, 2024
+            </p>
+          ) : null
+      }
       <ul className="footer-socials">
         <li className="social-media__item footer__media-item">
           <a style={{all: 'unset',width:'100%',height:'100%',display:'flex',alignItems:'center',justifyContent:'center'}} href='https://www.facebook.com/adn.care/' target='_blank'>

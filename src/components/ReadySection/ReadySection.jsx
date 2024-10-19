@@ -4,7 +4,7 @@ import { FaArrowUp } from "@react-icons/all-files/fa/FaArrowUp";
 import './ReadySection.css'
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const ReadySection = () => {
+const ReadySection = ({isFooter = false}) => {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -44,6 +44,13 @@ const ReadySection = () => {
       <div className="back__cta" onClick={() => handleClick()}>
         <FaArrowUp style={{fontSize:'2rem'}} />
       </div>
+      {
+        isFooter ? (
+          <p className="copyright" style={{color:'#4E4E4E'}}>
+            © SOFTCACTUS, Tous les droits sont réservés, 2024
+          </p>
+        ) : null
+      }
     </section>
   );
 };

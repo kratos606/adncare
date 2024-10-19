@@ -8,6 +8,8 @@ const Apropos = lazy(() => import('./pages/apropos'));
 const Contact = lazy(() => import('./pages/contact'));
 const Galerie = lazy(() => import('./pages/galerie'));
 const HomePhone = lazy(() => import('./pages/homePhone'))
+const ContactPhone = lazy(() => import('./pages/contactPhone'))
+const AproposPhone = lazy(() => import('./pages/aproposPhone'));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -45,9 +47,9 @@ function App() {
       <ScrollToTop />
         <Routes>
           <Route path="/" element={isMobile ? <HomePhone /> : <Home />} />
-          <Route path="/apropos" element={<Apropos />} />
+          <Route path="/apropos" element={isMobile ? <AproposPhone /> : <Apropos />} />
           <Route path="/galerie" element={<Galerie />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={isMobile ? <ContactPhone /> : <Contact />} />
         </Routes>
       </Suspense>
     </Router>

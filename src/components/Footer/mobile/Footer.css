@@ -1,0 +1,40 @@
+.footer-section__phone {
+    background-color: #2F80ED;
+    width: 100%;
+    min-height: 100vh;
+    position: relative; /* Ensure the position context for absolute children */
+    overflow: hidden;   /* Prevent overflow from pseudo-elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form__phone {
+    background-color: white;
+    width: 90%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-block: 2rem;
+}
+
+.contact-form__container{
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form__phone__header{
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34.28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}

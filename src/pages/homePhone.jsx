@@ -1,23 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaPhone } from '@react-icons/all-files/fa/FaPhone';
 import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF'
 import { FaRegEnvelope } from '@react-icons/all-files/fa/FaRegEnvelope';
 import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import { IoLocationOutline } from "@react-icons/all-files/io5/IoLocationOutline";
-import { IoMenu } from '@react-icons/all-files/io5/IoMenu';
-import { IoClose } from '@react-icons/all-files/io5/IoClose';
+import Footer from '../components/Footer/mobile/Footer';
+import Navbar from '../components/Navbar/mobile/Navbar';
 import './css/homePhone.css'
 
-const HomePhone = () => {
-    const [open, setOpen] = useState(false);
-  
+const HomePhone = () => {  
     return (
       <>
         <section className='background__home-phone'>
-          <nav style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '2rem'}}>
-            <img src={'/logo.svg'} style={{ width: '94px', height: '36.75px' }} alt='logo' />
-            <IoMenu style={{ color: 'white', fontSize: '2rem' }} onClick={() => setOpen(true)} />
-          </nav>
+          <Navbar />
           <div className="swipe-down swipe-phone">
             <div className="swipe-down__gesture">
             <div className="swipe-down__icon"></div>
@@ -112,50 +107,7 @@ const HomePhone = () => {
             </div>
           </div>
         </section>
-        
-        {open && (
-          <ul className="navbar-menu__phone" style={{
-            position: 'fixed', 
-            top: 0, 
-            left: 0, 
-            width: '100%', 
-            height: '100%',
-            zIndex: 999, 
-            padding: '2rem',
-            listStyle:'none',
-            display:'flex',
-            justifyContent:'center',
-            alignItems:'center' ,
-            flexDirection:'column',
-            gap:'2rem',
-            background:'rgba(0,0,0,0.3)',
-            backdropFilter:'blur(20px)'
-          }}>
-            <IoClose 
-              style={{ 
-                position: 'absolute', 
-                top: '2rem', 
-                right: '2rem', 
-                fontSize: '2rem', 
-                cursor: 'pointer',
-                color:'white'
-              }} 
-              onClick={() => setOpen(false)} 
-            />
-            <li className='navbar__menu-item__phone active'>
-                Accueil
-            </li>
-            <li className='navbar__menu-item__phone'>
-                À-propos
-            </li>
-            <li className='navbar__menu-item__phone'>
-                Spécialités
-            </li>
-            <li className='navbar__menu-item__phone'>
-                Galerie
-            </li>
-          </ul>
-        )}
+        <Footer showNavbar={false} />
       </>
     );
   }
