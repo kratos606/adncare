@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <>
         <section className='Contact__hero-section'>
-        <Navbar colored={true} />
-        <SwipeDown gold={true}/>
+          <Navbar colored={true} />
+          <SwipeDown gold={true}/>
         </section>
         <Footer isFooter={false} />
         <ReadySection isFooter={true} />

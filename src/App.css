@@ -221,6 +221,10 @@
   height: 8rem;
 }
 
+.hero__footer-section.hero__phone{
+  height: 6rem;
+}
+
 .hero__footer-section__call-now {
   width: 156px;
   height: 43px;
