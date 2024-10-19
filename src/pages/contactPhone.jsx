@@ -5,7 +5,7 @@ import './css/contactPhone.css'
 const ContactPhone = () => {
   return (
     <>
-        <Footer showNavbar={true} />
+        <Footer showNavbar={true} black={true} />
     </>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar/mobile/Navbar'
 import Footer from '../components/Footer/mobile/Footer'
-import './css/aproposPhone.css'
 import Features from '../components/Features/Features'
+import './css/aproposPhone.css'
 
 const AproposPhone = () => {
   return (
@@ -23,7 +23,7 @@ const AproposPhone = () => {
             </div>
           </div>
         <img src='/bc8159e88e6f6e20702363edb7e8bbcf.png' />
-          <div className="grid-item">
+          <div className="grid-item" style={{padding:'1.5rem'}}>
             <h1 className='grid__item-text header'>Adn Care</h1>
             <h2 className='grid__item-text sub-header'>Énergie vibrante, santé optimale.</h2>
             <p className='grid__item-text description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis, augue uttytu i imperdiet ultricies.</p>

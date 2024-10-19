@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
+import GaleriePhone from './pages/galeriePhone';
 
 // Lazy load the pages
 const Home = lazy(() => import('./pages/home'));
@@ -48,7 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={isMobile ? <HomePhone /> : <Home />} />
           <Route path="/apropos" element={isMobile ? <AproposPhone /> : <Apropos />} />
-          <Route path="/galerie" element={<Galerie />} />
+          <Route path="/galerie" element={isMobile ? <GaleriePhone /> : <Galerie />} />
           <Route path="/contact" element={isMobile ? <ContactPhone /> : <Contact />} />
         </Routes>
       </Suspense>

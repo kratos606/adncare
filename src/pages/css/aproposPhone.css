@@ -107,8 +107,79 @@
   }
 
   .apropos__phone .features-container{
+    display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-block: 2rem;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 20px auto;
+    position: relative;
+  }
+  
+  .circle.orange {
+    background-color: #FEAC00; /* orange */
+  }
+  
+  .circle.blue {
+    background-color: #2F80ED; /* blue */
+  }
+  
+  .circle span{
+    font-family: Anta;
+    font-size: 43.12px;
+    font-weight: 400;
+    line-height: 53.65px;
+    text-align: left;
+  }
+  
+  .circle::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 4px solid #2F80ED;
+    border-bottom: 4px solid transparent;
+    border-radius: 50%;
+  }
+  
+  .feature:nth-child(odd) > .circle::before {
+    border: 4px solid #2F80ED;
+    border-bottom: 4px solid transparent;
+  }
+  .feature:nth-child(even) > .circle::before {
+    border: 4px solid #FEAC00;
+    border-bottom: 4px solid transparent;
+  }
+  
+  .feature h3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 49.77px;
+    text-align: center;
+    color: #444444;
+  }
+  
+  .feature p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color:#737373;
   }
 
   .why__us-menu__phone{
@@ -189,4 +260,8 @@
     line-height: 25.78px;
     color: #737373;
     width: 350px;
+  }
+
+  .navbar-menu__phone{
+    background: white;
   }

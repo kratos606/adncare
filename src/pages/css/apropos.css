@@ -347,3 +347,7 @@
     color: #737373;
     width: 350px;
   }
+
+  .navbar-menu__phone{
+    background: white;
+  }
