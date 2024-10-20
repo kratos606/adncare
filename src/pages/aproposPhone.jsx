@@ -93,7 +93,7 @@ const AproposPhone = () => {
         <SwipeDown />
         <TitleContainer title="À propos de nous" />
         <div style={{position:'relative',width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
-          <img src='/bc8159e88e6f6e20702363edb7e8bbcf.png' className='apropos__phone__img' alt="Apropos" loading='lazy' />
+          <img src='/bc8159e88e6f6e20702363edb7e8bbcf.webp' className='apropos__phone__img' alt="Apropos" loading='lazy' />
           <div className="gradient__layer" style={{width:'90%'}}>
             <p>13+ <br />
             Years of Experience</p>
