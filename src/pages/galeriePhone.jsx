@@ -106,13 +106,13 @@ const GridGallery = () => {
 const VideoSection = () => {
   const videos = [
     {
-      backgroundImage: "/54446b38ffbae45bc8befa57ac084639.webp",
+      backgroundImage: "/54446b38ffbae45bc8befa57ac084639_25.webp",
       title: "Lorem ipsum",
       description: "Lorem ipsum dolor",
       isPlaying: false,
     },
     {
-      backgroundImage: "/8671a1abb8d0e729edaeef2a1075f9b4_75.webp",
+      backgroundImage: "/8671a1abb8d0e729edaeef2a1075f9b4_1_25.webp",
       title: "Lorem ipsum",
       description: "Lorem ipsum dolor",
       isPlaying: true,
