@@ -32,7 +32,7 @@ const TitleContainer = ({ title }) => {
 // Sub-component for the Grid Item
 const GridItem = () => {
   return (
-    <div className="grid-item" style={{ padding: '1.5rem' }}>
+    <div className="grid-item">
       <h1 className='grid__item-text header'>Adn Care</h1>
       <h2 className='grid__item-text sub-header'>Énergie vibrante, santé optimale.</h2>
       <p className='grid__item-text description'>
