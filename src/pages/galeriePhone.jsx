@@ -80,7 +80,7 @@ const TitleContainer = () => {
  */
 const GridGallery = () => {
   const images = [
-    { src: "/images (2).webp", alt: "Image 1", className: "item1" },
+    { src: "/images_2_50.webp", alt: "Image 1", className: "item1" },
     { src: "/Rectangle 887.png", alt: "Image 2", className: "item2" },
     { src: "/Rectangle 882.png", alt: "Image 3", className: "item3" },
     { src: "/Rectangle 883.png", alt: "Image 4", className: "item4" },
@@ -112,7 +112,7 @@ const VideoSection = () => {
       isPlaying: false,
     },
     {
-      backgroundImage: "/8671a1abb8d0e729edaeef2a1075f9b4.webp",
+      backgroundImage: "/8671a1abb8d0e729edaeef2a1075f9b4_75.webp",
       title: "Lorem ipsum",
       description: "Lorem ipsum dolor",
       isPlaying: true,
