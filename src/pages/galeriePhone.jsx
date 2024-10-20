@@ -80,7 +80,7 @@ const TitleContainer = () => {
  */
 const GridGallery = () => {
   const images = [
-    { src: "", alt: "Image 1", className: "item1" },
+    { src: "/images_2_50.webp", alt: "Image 1", className: "item1" },
     { src: "/Rectangle 887.png", alt: "Image 2", className: "item2" },
     { src: "/Rectangle 882.png", alt: "Image 3", className: "item3" },
     { src: "/Rectangle 883.png", alt: "Image 4", className: "item4" },
