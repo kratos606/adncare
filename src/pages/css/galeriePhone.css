@@ -10,9 +10,6 @@
 
 .video-item__phone {
     border-radius: 1rem;
-    background: var(--i);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     overflow: hidden;
 }
