@@ -53,7 +53,7 @@ const GridItem = () => {
 const WhyUsMenu = () => {
   return (
     <div className="why__us-menu__phone">
-      <img src="/5e7996ff75142dfda98484a79ff366b8.webp" alt="Why Us" />
+      <img src="/5e7996ff75142dfda98484a79ff366b8_2_25.webp" alt="Why Us" />
       <div>
         <div className="why__us__section__phone">
           <div className="why__us__section__title__phone">
@@ -93,7 +93,7 @@ const AproposPhone = () => {
         <SwipeDown />
         <TitleContainer title="À propos de nous" />
         <div style={{position:'relative',width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
-          <img src='/bc8159e88e6f6e20702363edb7e8bbcf.webp' alt="Apropos" loading='lazy' />
+          <img src='/bc8159e88e6f6e20702363edb7e8bbcf.png' alt="Apropos" loading='lazy' />
           <div className="gradient__layer" style={{width:'90%'}}>
             <p>13+ <br />
             Years of Experience</p>
