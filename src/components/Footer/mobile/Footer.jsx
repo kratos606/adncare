@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Footer.css'
-import { IoMenu } from '@react-icons/all-files/io5/IoMenu'
-import { IoClose } from '@react-icons/all-files/io5/IoClose'
 import ContactForm from '../../Contact/ContactForm'
 import Navbar from '../../Navbar/mobile/Navbar'
 

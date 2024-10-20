@@ -66,6 +66,7 @@
   .grid__item-image{
     width: 100%;
     height: 100%;
+    position: relative;
   }
   
   .grid-item:last-child{

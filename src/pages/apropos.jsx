@@ -112,6 +112,10 @@ const ImageSection = () => {
     <div className="grid-item">
       <div className="grid__item-image">
         <img src='/bc8159e88e6f6e20702363edb7e8bbcf.png' alt="Apropos" loading='lazy' />
+        <div className="gradient__layer">
+          <p>13+ <br />
+          Years of Experience</p>
+        </div>
       </div>
     </div>
   );
