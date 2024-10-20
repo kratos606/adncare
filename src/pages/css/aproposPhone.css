@@ -265,3 +265,7 @@
   .navbar-menu__phone{
     background: white;
   }
+  
+  .grid-item{
+    padding: 20px;
+  }
