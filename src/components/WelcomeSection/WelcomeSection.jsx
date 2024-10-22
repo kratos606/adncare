@@ -7,12 +7,11 @@ const WelcomeSection = () => {
     <section className='welcome__section'>
       <div className="title__container">
         <div className="welcome__header">
-          <h1 className="welcome__title">Welcome to adn care</h1>
-          <div className='welcome__details'>
-            Votre expert en ostéopathie, périnéologie, kinésithérapie sportive, performance sportive, neutral trainer, dryneedling 
-            et Tecarthérapie.
-          </div>
+          <h1 className="welcome__title">Bienvenue chez ADN CARE</h1>
         </div>
+      </div>
+      <div className='welcome__details'>
+        Bienvenue au centre ADN CARE, votre spécialiste en kinésithérapie sportive. Nous mettons votre santé et votre bien-être au cœur de nos préoccupations, en vous offrant des soins personnalisés et adaptés à vos besoins. 
       </div>
       <div className="welcome-main__section">
         <div className="main-back">
@@ -44,12 +43,11 @@ const WelcomeSection = () => {
       </div>
       <div className="title__container">
         <div className="welcome__footer">
-          <h1 className="welcome__title">Our Specializations</h1>
-          <div className='welcome__details'>
-            Votre expert en ostéopathie, périnéologie, kinésithérapie sportive, performance sportive, neutral trainer, dryneedling 
-            et Tecarthérapie.
-          </div>
+          <h1 className="welcome__title">Votre santé, notre priorité</h1>
         </div>
+      </div>
+      <div className='welcome__details'>
+        Chez ADN CARE, nous faisons de votre rétablissement notre priorité absolue. Nos experts vous accompagnent avec une approche globale et des techniques innovantes pour optimiser votre performance et votre bien-être.
       </div>
     </section>
   );

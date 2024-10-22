@@ -33,9 +33,9 @@ const ReadySection = ({isFooter = false}) => {
             <img src="med.svg" alt="Logo" loading="lazy" />
           </div>
           <div className="ready__panel__description-main">
-            <h1>Book Appointments</h1>
+            <h1>Prendre rendez-vous</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis, augue uttytu
+              Prêt à commencer votre parcours vers le bien-être ? Prenez rendez-vous dès aujourd'hui avec notre équipe pour une consultation personnalisée. 
             </p>
             <button className="book__us-now">LETS BOOK</button>
           </div>

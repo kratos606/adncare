@@ -6,10 +6,10 @@ const NewSection = () => {
     <section className='new-section'>
       <div className="bullets__menu-section">
         <div className="bullets__menu-item">
-          <button className="bullets__menu__item-button">Pressothérapie</button>
           <button className="bullets__menu__item-button">Tecarthérapie</button>
-          <button className="bullets__menu__item-button">Electrothérapie</button>
+          <button className="bullets__menu__item-button">Électrothérapie</button>
           <button className="bullets__menu__item-button">Ultrasons</button>
+          <button className="bullets__menu__item-button">Pressothérapie</button>
         </div>
         <div className="bullets__menu-item bullets__menu__item__picture-viewer">
           <img src={'/product.svg'} alt={'product'} loading="lazy" />

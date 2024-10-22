@@ -168,9 +168,10 @@
     font-family: Inter;
     font-size: 20px;
     font-weight: 600;
-    line-height: 49.77px;
+    line-height: 1.5rem;
     text-align: center;
     color: #444444;
+    padding-block: 1rem;
   }
   
   .feature p {

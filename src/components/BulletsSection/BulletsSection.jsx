@@ -7,17 +7,17 @@ const bulletsData = [
   {
     number: '01',
     title: 'OSTÉOPATHIE',
-    description: 'Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Convallis, Augue Uttytu I Imperdiet.'
+    description: 'Une approche douce qui rétablit l’équilibre du corps en traitant les dysfonctionnements musculo-squelettiques, viscéraux et crâniens.'
   },
   {
     number: '02',
     title: 'Périnéologie',
-    description: 'Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Convallis, Augue Uttytu I Imperdiet.'
+    description: 'Spécialité dédiée à la rééducation du périnée, essentielle pour traiter les troubles uro-gynécologiques et améliorer la qualité de vie.'
   },
   {
     number: '03',
-    title: 'Physiokinésithérapie',
-    description: 'Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Pellentesque Convallis, Augue Uttytu I Imperdiet.'
+    title: 'Kinésithérapie sportive',
+    description: 'Des soins spécifiques pour prévenir et traiter les blessures liées à l’activité sportive, et optimiser la récupération des athlètes.'
   },
 ];
 

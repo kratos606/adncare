@@ -8,12 +8,14 @@ const Experiences = () => {
     <section className='experiences'>
       <div className="title__container">
         <div className="welcome__header">
-          <h1 className="welcome__title">Patient Experiences</h1>
-          <div className='welcome__details'>
+          <h1 className="welcome__title">Nos patients témoignent</h1>
+        </div>
+      </div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+      <div className='welcome__details'>
             Votre expert en ostéopathie, périnéologie, kinésithérapie sportive, performance sportive, neutral trainer, dryneedling 
             et Tecarthérapie.
-          </div>
-        </div>
+      </div>
       </div>
       <div className="experiences__video-slider">
       <div className="experiences__video-slider">

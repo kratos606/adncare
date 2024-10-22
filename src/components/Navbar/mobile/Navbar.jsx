@@ -70,8 +70,14 @@ const Navbar = ({ black = false }) => {
               À-propos
             </NavLink>
           </li>
-          <li className="navbar__menu-item__phone">
+          <li className={`navbar__menu-item__phone ${isActive('/specialites') ? 'active' : ''}`}>
+            <NavLink 
+              to="/specialites" 
+              end
+              style={{ all: 'unset', cursor: 'pointer' }}
+            >
             Spécialités
+            </NavLink>
           </li>
           <li className={`navbar__menu-item__phone ${isActive('/galerie') ? 'active' : ''}`}>
             <NavLink 

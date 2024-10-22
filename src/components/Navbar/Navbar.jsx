@@ -45,14 +45,14 @@ const Navbar = (props) => {
             </NavLink>
           </li>
           <li className='navbar__menu-item'>
-            {/* <NavLink 
+            <NavLink 
               to="/specialites" 
               className={({ isActive }) => 
                 isActive ? 'navbar__menu-link active' : 'navbar__menu-link'
               }
-            > */}
+            >
               Spécialités
-            {/* </NavLink> */}
+            </NavLink>
           </li>
           <li className='navbar__menu-item'>
             <NavLink 

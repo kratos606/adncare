@@ -34,7 +34,7 @@ const HeroSection = () => {
       <SwipeDown gold={true} />
       <div className="title__container">
         <div className="welcome__footer">
-          <h1 className="welcome__title">à propos de nous</h1>
+          <h1 className="welcome__title">dédiés à l'amélioration de votre santé et de votre bien-être.</h1>
         </div>
       </div>
       <AproposGrid />
@@ -131,7 +131,7 @@ const TextSection = () => {
       <h1 className='grid__item-text header'>Adn Care</h1>
       <h2 className='grid__item-text sub-header'>Énergie vibrante, santé optimale.</h2>
       <p className='grid__item-text description'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis, augue uttytu i imperdiet ultricies.
+        Notre centre de kinésithérapie sportive allie une expertise de pointe avec les meilleures technologies pour vous offrir des soins personnalisés et efficaces.
       </p>
       <div className="grid__item-card">
         <div className="card-id"></div>
@@ -173,11 +173,11 @@ const WhyUsMenu = () => {
       <div>
         <div className="why__us__section">
           <div className="why__us__section__title">
-            We Proudly Give Quality Treatments
+            Nous sommes fiers de notre expertise de qualité
           </div>
           <div className="why__us__section__details">
             <span className="why__us__section__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis, augue uttytu i imperdiet ultricies, leo mauris rhoncus uttytu.
+              Notre équipe d'experts s'engage à vous fournir des soins de la plus haute qualité, en alliant compétence et passion. Nous mettons un point d'honneur à rester à jour avec les avancés dans le domaine de la kinésithérapie et de la réadaptation pour vous offrir les meilleurs services possibles.
             </span>
             <ul className="why__us__section__bullets">
               <li className="why__us__section__item">

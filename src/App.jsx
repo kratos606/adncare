@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import GaleriePhone from './pages/galeriePhone';
 
 // Lazy load the pages
 const Home = lazy(() => import('./pages/home'));
@@ -11,6 +10,9 @@ const Galerie = lazy(() => import('./pages/galerie'));
 const HomePhone = lazy(() => import('./pages/homePhone'))
 const ContactPhone = lazy(() => import('./pages/contactPhone'))
 const AproposPhone = lazy(() => import('./pages/aproposPhone'));
+const Specialites = lazy(() => import('./pages/specialites'))
+const GaleriePhone = lazy(() => import('./pages/galeriePhone'));
+const SpecialitesPhone = lazy(() => import('./pages/specialitesPhone'));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -51,6 +53,7 @@ function App() {
           <Route path="/apropos" element={isMobile ? <AproposPhone /> : <Apropos />} />
           <Route path="/galerie" element={isMobile ? <GaleriePhone /> : <Galerie />} />
           <Route path="/contact" element={isMobile ? <ContactPhone /> : <Contact />} />
+          <Route path="/specialites" element={isMobile ? <SpecialitesPhone /> : <Specialites />} />
         </Routes>
       </Suspense>
     </Router>

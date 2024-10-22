@@ -2,10 +2,10 @@ import React from 'react'
 
 const Features = () => {
     const features = [
-      { id: '01', title: '100% Satisfaction', text: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Pellentesque Convallis.', color: 'orange' },
-      { id: '02', title: 'Expert Team', text: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Pellentesque Convallis.', color: 'blue' },
-      { id: '03', title: 'Modern Technology', text: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Pellentesque Convallis.', color: 'orange' },
-      { id: '04', title: 'Flexible Pricing', text: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Pellentesque Convallis.', color: 'blue' },
+      { id: '01', title: 'Expertise professionnelle', text: 'Nos praticiens sont hautement qualifiés et formés aux dernières techniques', color: 'orange' },
+      { id: '02', title: 'Approche personnalisée', text: 'Nous croyons que chaque patient est unique. Nos traitements sont donc adaptés à vos besoins spécifiques', color: 'blue' },
+      { id: '03', title: 'Technologie de pointe', text: 'Nous utilisons des équipements modernes et innovants pour optimiser votre rééducation', color: 'orange' },
+      { id: '04', title: 'Suivi et accompagnement', text: 'Nous vous accompagnons tout au long de votre parcours de soins', color: 'blue' },
     ];
   
     return (
