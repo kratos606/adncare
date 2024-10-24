@@ -1,1 +1,0 @@
-import{j as r}from"./index-D80jKaKx.js";import{F as t}from"./Footer-j3MTEQAU.js";import"./ContactForm-BTqluPts.js";const s=()=>r.jsx(r.Fragment,{children:r.jsx(t,{showNavbar:!0,black:!0})});export{s as default};
