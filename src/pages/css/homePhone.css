@@ -147,6 +147,10 @@
     object-fit: contain;
   }
 
-  .navbar-menu__phone{
+  .background__home-phone .navbar-menu__phone{
     background: rgba(0,0,0,0.3);
+  }
+
+  .background__home-phone .navbar__menu-item__phone{
+    color: white;
   }
