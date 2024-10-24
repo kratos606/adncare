@@ -16,3 +16,65 @@
 .experiences__video-slider .video-item:nth-child(2){
   transform: scale(1.1);
 }
+
+.image-slider_a .galerie__image-item_a{
+  display: inline-block;
+}
+
+.image-slider_a img{
+  width: 100%;
+  aspect-ratio: 9 / 7;
+  object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-slider_a,.galerie-main_a{
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.image-slider_a,.galerie-second_a{
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(calc(25vw * -5));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(25vw * -4));
+  }
+}
+
+.galerie__image-item_a{
+  border-radius: 13.33px;
+  overflow: hidden;
+  width: 25vw;
+  aspect-ratio: 9 / 7;
+  padding-inline: 1rem;
+}
+
+.galerie-item_a{
+  margin-block: 1rem;
+}
+
+.galerie-item_a.galerie-main_a{
+  animation: 40s slide infinite linear;
+  display: block;
+}
+
+.galerie-item_a.galerie-second_a{
+  animation: 32s slide2 infinite linear;
+  display: block;
+}

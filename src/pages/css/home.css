@@ -132,14 +132,14 @@
     position: relative;
   }
   
-  .main-back::before{
+  .main-back::before {
     content: '';
     position: absolute;
-    top: -150px;
-    left: 25%;
+    top: -200px;
+    left: 15%;
     background: url(/welcome-background-svg.webp);
     background-repeat: no-repeat;
-    background-size: contain; 
-    width: 80%;
+    background-size: contain;
+    width: 100%;
     aspect-ratio: 16 / 9;
-  }
+}

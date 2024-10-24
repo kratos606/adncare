@@ -14,6 +14,10 @@
   font-family: 'Anta', sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .grid-container{
   margin-block: 4rem;
 }
@@ -78,6 +82,7 @@
   font-size: 17.78px;
   font-family: Inter;
   text-transform: capitalize;
+  text-align: justify;
 }
 
 .welcome-cta__section__details{
@@ -218,7 +223,7 @@
   justify-content: space-around;
   align-items: center;
   padding-inline: 4rem;
-  height: 8rem;
+  height: 10rem;
 }
 
 .hero__footer-section.hero__phone{
@@ -389,12 +394,14 @@ padding-inline: 0rem;
   border-radius: 58.93px 58.93px 0 0;
   padding: 2rem 2rem;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .gradient__layer p{
   font-family: Anta;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 25.65px;
   text-align: left;
   color: white;
@@ -402,7 +409,7 @@ padding-inline: 0rem;
 
 .gradient__layer p::first-line{
   font-family: Anta;
-  font-size: 21.61px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 25.65px;
   text-align: left;
@@ -419,6 +426,8 @@ padding-inline: 0rem;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .why__us-menu img{
@@ -427,6 +436,7 @@ padding-inline: 0rem;
   height: 100%;
   object-fit: contain;
   overflow: hidden;
+  align-self: center;
 }
 
 .why__us-menu > div{
@@ -460,6 +470,49 @@ padding-inline: 0rem;
   background-size: contain;
   width: 112px;
   height: 112px;
+}
+
+.bullets__menu__item-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bullets__menu__item-button.active{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2F80ED;
+}
+
+.bullets__menu__item-button p{
+  position: relative;
+  width: 80%;
+  text-align: left;
+  font-family: Space Grotesk;
+  font-size: 20.44px;
+  font-weight: 500;
+  line-height: 19.44px;
+  color: #2F80ED;
+}
+
+.bullets__menu__item-button.active p{
+  color: white;
+}
+
+
+.bullets__menu__item-button p::after{
+  content: '►';
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFA800;
+  font-size: 18px;
+}
+
+.bullets__menu__item-button.active p::after{
+  color: white;
 }
 
 .why__us__section__title::after{

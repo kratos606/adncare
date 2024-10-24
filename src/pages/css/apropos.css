@@ -1,7 +1,6 @@
 
 .apropos__hero-section {
     width: 100%;
-    min-height: 100vh;
     position: relative; /* Ensure the position context for absolute children */
     overflow: hidden;   /* Prevent overflow from pseudo-elements */
     display: flex;
@@ -61,6 +60,7 @@
     position: relative;
     border-radius: 10.35px;
     overflow: hidden;
+    margin-block: 1rem;
   }
   
   .grid__item-image{
@@ -109,7 +109,7 @@
   .apropos__hero-section .sub-header{
     font-family: Anta;
     font-size: 39.29px;
-    line-height: 2rem;
+    line-height: 3rem;
     font-weight: 400;
     text-align: left;
     color: #444444;
@@ -121,7 +121,7 @@
     font-family: Inter;
     font-size: 17.68px;
     font-weight: 400;
-    text-align: justified;
+    text-align: justify;
     color: #737373;
     flex: 1;
   }
@@ -168,7 +168,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 0;
+    flex: 1;
+    margin-block: 6rem;
   }
   
   .feature {

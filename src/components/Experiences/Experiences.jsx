@@ -48,36 +48,71 @@ const Experiences = () => {
         </div>
       </div>
       </div>
-      <div className="galerie">
-        <div className="galerie-item galerie-main">
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/Rectangle 887.png' alt="Gallery 1" loading="lazy" />
+      <div className="galerie_a">
+        <div className="galerie-item_a galerie-main_a">
+          <div className="image-slider_a">
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/Rectangle 887.png' alt="Gallery 1" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (4).png' alt="Gallery 2" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (5).png' alt="Gallery 3" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (6).png' alt="Gallery 4" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/Rectangle 890.png' alt="Gallery 5" loading="lazy" />
+            </div>
           </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (4).png' alt="Gallery 2" loading="lazy" />
-          </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (5).png' alt="Gallery 3" loading="lazy" />
-          </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (6).png' alt="Gallery 4" loading="lazy" />
-          </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/Rectangle 890.png' alt="Gallery 5" loading="lazy" />
+          <div className="image-slider_a">
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/Rectangle 887.png' alt="Gallery 1" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (4).png' alt="Gallery 2" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (5).png' alt="Gallery 3" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (6).png' alt="Gallery 4" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/Rectangle 890.png' alt="Gallery 5" loading="lazy" />
+            </div>
           </div>
         </div>
-        <div className="galerie-item galerie-second">
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (9).png' alt="Gallery 6" loading="lazy" />
+        <div className="galerie-item_a galerie-second_a">
+          <div className="image-slider_a">
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (9).png' alt="Gallery 1" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (1).png' alt="Gallery 2" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (2).webp' alt="Gallery 3" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (3).png' alt="Gallery 4" loading="lazy" />
+            </div>
           </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (1).png' alt="Gallery 7" loading="lazy" />
-          </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (2).webp' alt="Gallery 8" loading="lazy" />
-          </div>
-          <div className="galerie__image-item">
-            <img className='galerie-image' src='/images (3).png' alt="Gallery 9" loading="lazy" />
+          <div className="image-slider_a">
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (9).png' alt="Gallery 1" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (1).png' alt="Gallery 2" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (2).webp' alt="Gallery 3" loading="lazy" />
+            </div>
+            <div className="galerie__image-item_a">
+              <img className='galerie-image_a' src='/images (3).png' alt="Gallery 4" loading="lazy" />
+            </div>
           </div>
         </div>
       </div>

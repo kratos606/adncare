@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'; // Import NavLink instead of Link
 import { AiOutlineArrowRight } from '@react-icons/all-files/ai/AiOutlineArrowRight';
 import './Navbar.css'
 
-const Navbar = (props) => {
+const Navbar = ({colored = true}) => {
   return (
     <nav className='navbar'>
       <div className="navbar__logo">
@@ -15,7 +15,7 @@ const Navbar = (props) => {
             isActive ? 'navbar__menu-link active' : 'navbar__menu-link'
           }
         >
-        {props.colored 
+        {colored 
           ? <img src={'/logo-color.svg'} alt='logo' /> 
           : <img src={'/logo.svg'} alt='logo' />
         }

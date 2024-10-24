@@ -35,9 +35,9 @@ const HeroSection = () => {
     <section className='Galerie__hero-section'>
       <Navbar colored={true} />
       <SwipeDown gold={true} />
-      <div className="galerie__title__container">
-        <div className="galerie__footer">
-          <h1 className="galerie__title">Meet our beautiful team</h1>
+      <div className="title__container">
+        <div className="welcome__header">
+          <h1 className="welcome__title">Meet our beautiful team</h1>
         </div>
       </div>
       <div className='galerie__details'>
@@ -46,9 +46,9 @@ const HeroSection = () => {
         </p>
       </div>
       <GridGallery />
-      <div className="galerie__title__container">
-        <div className="galerie__footer">
-          <h1 className="galerie__title">Meet our beautiful team</h1>
+      <div className="title__container">
+        <div className="welcome__header">
+          <h1 className="welcome__title">Meet our beautiful team</h1>
         </div>
       </div>
       <div className='galerie__details'>

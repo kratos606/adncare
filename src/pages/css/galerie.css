@@ -25,6 +25,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .Galerie__hero-section{
+    overflow-x: hidden;
+  }
   
   .galerie__details p{
     width: 700px;

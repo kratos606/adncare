@@ -33,13 +33,13 @@
 .navbar__menu-item {
     flex: 1;
     text-align: center;
-    color: #444444;
+    color: #656565;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
 }
   
-.navbar__menu-item--active {
+.navbar__menu-link.active {
     color: black;
 }
   

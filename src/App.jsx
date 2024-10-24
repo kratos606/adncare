@@ -2,17 +2,17 @@ import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 
-// Lazy load the pages
-const Home = lazy(() => import('./pages/home'));
-const Apropos = lazy(() => import('./pages/apropos'));
-const Contact = lazy(() => import('./pages/contact'));
-const Galerie = lazy(() => import('./pages/galerie'));
-const HomePhone = lazy(() => import('./pages/homePhone'))
-const ContactPhone = lazy(() => import('./pages/contactPhone'))
-const AproposPhone = lazy(() => import('./pages/aproposPhone'));
-const Specialites = lazy(() => import('./pages/specialites'))
-const GaleriePhone = lazy(() => import('./pages/galeriePhone'));
-const SpecialitesPhone = lazy(() => import('./pages/specialitesPhone'));
+// Directly import the pages without lazy loading
+import Home from './pages/home';
+import Apropos from './pages/apropos';
+import Contact from './pages/contact';
+import Galerie from './pages/galerie';
+import HomePhone from './pages/homePhone';
+import ContactPhone from './pages/contactPhone';
+import AproposPhone from './pages/aproposPhone';
+import Specialites from './pages/specialites';
+import GaleriePhone from './pages/galeriePhone';
+import SpecialitesPhone from './pages/specialitesPhone';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

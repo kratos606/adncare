@@ -150,15 +150,17 @@ const TextSection = () => {
  */
 const WhyUsSection = () => {
   return (
-    <section className="why-us">
-      <div className="title__container">
-        <div className="welcome__footer">
-          <h1 className="welcome__title">Pourquoi Nous Choisir</h1>
+    <>
+      <section className="why-us">
+        <div className="title__container">
+          <div className="welcome__footer">
+            <h1 className="welcome__title">Pourquoi Nous Choisir</h1>
+          </div>
         </div>
-      </div>
-      <Features />
-      <WhyUsMenu />
-    </section>
+        <Features />
+        <WhyUsMenu />
+      </section>
+    </>
   );
 };
 
